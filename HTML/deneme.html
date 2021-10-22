@@ -156,7 +156,181 @@
            
     </tbody>
 </table>
-<br><!--**************************************************************************************************-->
+<hr><!--**************************************************************************************************-->
+       <!-- inline ve block etiketleri-->
+      <!-- blok elementler-->
+    <div style="border: 1px solid red;">                    <!--Blok elementler satırın tümünü kaplar-->
+         blok element
+     </div>
+     <h1 style="border: 1px solid red;">
+         h1 blok element
+     </h1>
+    <form style="border: 1px solid red;">
+       form  blok element
+    </form>>
 
+    <ul style="border: 1px solid blue ;">
+        <li style="border: 1px solid red;"> aaa </li>
+        <li style="border: 1px solid red;"> aaa 1 </li>
+        <li style="border: 1px solid red;"> aaa 2 </li>
+    </ul>
+   
+    <ol style="border: 1px solid blue ;">
+        <li style="border: 1px solid red;"> aaa </li>
+        <li style="border: 1px solid red;"> aaa 1 </li>
+        <li style="border: 1px solid red;"> aaa 2 </li>
+    </ol>
+
+    <p style="border: 1px solid red;"> 
+        PARAGRAF 
+        </p>
+
+     <table style="border: 1px solid red;">
+        <thead>
+                 <th>
+                     ad
+                 </th>
+        </thead>
+        <tbody>
+                <td>
+                    blok
+                </td>
+        </tbody>
+
+     </table>   
+     <!-- Inlıne Elementler-->                     <!-- Inline etiketlerden sonra aynı satıra Inlıne  etiket kullanılabilir -->
+     deniz
+     <b>kartal </b>
+     <b> Lorem, ipsum.   </b>
+     <b>Lorem, ipsum dolor.</b>
+
+     <a href="">googlea git</a>
+     
+     <strong>kalın yazı</strong>
+     
+     <img src="img.jpg" width="15%" alt="resim bulunamadı">
+     
+     <input width="5%" type="text">
+
+     <!-- Block ve Inline beraber kullanma-->
+     <div>
+         <img src="img2.jpg" alt="">
+     </div>
+
+<hr><!--**************************************************************************************************-->
+    <!--div etiketi bölme işlemine yarar-->  
+       <div style="border: 1px solid red;">
+           Bu BİR DİVDİR
+       </div>
+   
+      <h1>DAĞLAR </h1>
+      <div style="width: 50%;">
+          <img src="img.jpg" style="width: 100%;" alt="">
+      </div>    
+<hr><!--**************************************************************************************************-->
+    <!-- form etiketi -->
+     <form action="https://www.google.com">    <!--action göndere tıkladığımızda yönlendirilecek sayfayı içeriyor-->   <!-- kullanıcıdan girdi bilgi alma tarzı işlere yarar-->
+     
+        <input type="text" type="text" name="kullanıcıadı" id="kullanıcıadı" placeholder="isim"> <!-- text alanı oluşturduk kutunun içine placeholder koyulabilir -->
+        <br>               <!-- name value bunlar backend de tanımlamak için girilir kullanıcı göremez-->
+        <input type="password" name="şifre" id="sifre" placeholder="şifrenizi giriniz"> <!--password şifre -->
+        <br>             
+        <input type="radio" name="gender" value="Erkek">Erkek    <!-- radio ile seçme hakkı veriyoruz-->
+        <input type="radio" name="gender" value="Kadın">Kadın    <!-- name i değiştirirsek birden çok seçenenekte bulunabilir gender2-->       
+        <br>
+        <select name="ülke" id="ülke">
+            <option value="usa"> USA</option>    <!-- select seçenek kutusu option komutuylada optionlar eklenir-->
+            <option value="turkiye">Türkiye</option>
+        </select>
+       <br>
+        <input type="checkbox" name="hastalık" id="hastalık">hastalık
+        <br>
+        <input type="checkbox" name="sigara" id="sigara">Sigara 
+
+        <br>
+
+        <input type="submit" value="Gönder"> <!-- sumbit kaydet gönder -->
+         
+     </form>
+
+         <!--her formun bir methodu vardır get methodu url içerisinde girilen bilgileri gösterir post methodu gizler-->
+<hr><!--**************************************************************************************************-->          
+      <!-- RENKLER-->
+        <!-- css işlemleri head de yapılır-->
+        <!-- <style> body{background-color:red;} <style>  arkaplan rengi-- head de değiştirilir-->
+         <!-- <style> p{ color:blue }<style>  -->   
+<hr><!--**************************************************************************************************-->          
+   <!--html 5 anlamsal etiketler semantic elements-->
+   
+     <!-- div yerine article-->
+    
+     <header style="border: 1px solid brown;"><img src="img.jpg" width="5%"  alt="">
+     <nav>
+         <ul>
+             <li> <a href="">Anasayfa </a> </li>
+             <li> <a href="">Hakkımızda</a></li>
+             <li><a href="">Duyuru</a></li>
+        </ul>
+     </nav>
+     </header>
+     <main>
+        <article style="border: 1px solid rgb(20, 3, 3);">
+           <h1>Ürünlerimiz</h1>
+           <section>
+               <h2> Ürün 1</h2>
+               <p>Lorem ipsum dolor sit.</p>
+
+           </section>
+           <section>
+               <h2>Ürün 2</h2>
+               <p>Lorem ipsum dolor sit amet.</p>
+
+           </section>
+           <section>
+               <h2> Ürün 3 </h2>
+               <p>Lorem, ipsum dolor.</p>
+           </section>
+           <aside>
+               en iyi müşteri
+            <p>Lorem, ipsum.</p>
+           </aside>
+        </article>
+
+     </main>
+      
+     <footer style="border: 1px solid blue;">
+        Daha fazla bilgi için <a href="">Tıklayınız</a>
+        <nav>
+            <ul>
+                <li><a href="">Facebook</a></li>
+                <li><a href="">youtube</a></li>
+            </ul>
+        </nav>
+
+     </footer>
+<hr><!--**************************************************************************************************-->          
+    <!-- ses ve video ekleme-->
+      <!--ses etiketi audio-->
+   <audio controls>  <!-- autoplay ve loop-->
+       <source src="sesler/piano.mp3">
+   </audio>
+   
+   <audio controls>
+       <source src="sesler/Guitar_Solo.mp3" type="audio/mp3" >
+   </audio> 
+   <video controls>
+       <source src="Sunrise - 83880.mp4" type="video/mp4" >
+   </video>
+    
+<hr><!--**************************************************************************************************-->          
+   <!-- ilerleme çubuğu-->
+  <progress min="0" max="100" value="40"></progress>
+
+<hr><!--**************************************************************************************************-->          
+   <!-- iframe siteye html dosyalarını ve hazır videoları gömme-->
+   <!-- youtubedan getirmek için paylaş -> yerleştir-->
+   <iframe src="form.html" frameborder="0"></iframe>    
+   <br> 
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/-6ITeJgpih4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </body>
 </html>
