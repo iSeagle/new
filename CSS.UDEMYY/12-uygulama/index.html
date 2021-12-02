@@ -6,25 +6,111 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        div {
+
+            width: 100%;
+            height: 300px;
+            text-align: center;
+            color: grey;
+
+        }
+
+        #stsl {
+            font-family: 'Times New Roman', Times, serif;
+            background-image: url("stsl.png");
+            background-repeat: no-repeat;
+            background-size: 100% 300px;
+        }
+
+        span.stsl {
+            font-size: 20px;
+            text-shadow: 0px 0px 1px black;
+            background-color: blanchedalmond;
+        }
+
+        .takımlar {
+            width: 100%;
+            float: left;
+
+
+        }
+
+        .tak {
+            width: 33%;
+            float: left;
+        }
+
+        .tak:nth-child(1) {
+            background-image: url("gs (2).png");
+            background-size: 100% 300px;
+        }
+
+        .tak:nth-child(2) {
+            background-image: url("fb.png");
+            background-size: 100% 300px;
+        }
+
+        .tak:nth-child(3) {
+            background-image: url("bjk.png");
+            background-size: 100% 300px;
+        }
+
+        .footer {
+            clear: both;
+            height: 300px;
+            background-color: coral;
+
+
+
+        }
+
+        img {
+            margin-top: 10px;
+            border: 10px dashed black;
+        }
+
+        .footer p {
+            white-space: pre-line;
+        }
+
+        @media screen and (max-width:990px) {
+            .tak {
+                width: 100%;
+            }
+
+            .footer {
+                margin-top: 900px;
+            }
+
+        }
+    </style>
 </head>
 
 <body>
-    <div>
-
+    <div id="stsl">
+        <span class="stsl">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </span>
     </div>
-    <div>
-        <div>
-
+    <div class="takımlar">
+        <div class="tak">
+            GALATASARAY
+            <P> AVRUPA FATİHİ</P>
         </div>
-        <div>
-
+        <div class="tak">
+            FENERBAHÇE
+            <P> Lorem ipsum dolor sit amet.</P>
         </div>
-        <div>
-
+        <div class="tak">
+            BEŞİKTAŞ
+            <P>Lorem ipsum dolor sit.</P>
         </div>
     </div>
-    <div>
-
+    <div class="footer">
+        <img src="stsl.png" alt="">
+        <p>Lorem ipsum
+            Lorem ipsum dolor sit amet consectetur. </p>
     </div>
 </body>
 

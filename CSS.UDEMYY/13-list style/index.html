@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .l1 {
+            list-style: none;
+
+
+        }
+
+        .l1 li::before {
+            content: " ";
+            display: inline-block;
+            height: 30px;
+            width: 30px;
+            background-image: url("gs.png");
+            background-size: 30px;
+
+        }
+
+        .l2 {
+            list-style-type: lower-alpha;
+            list-style-position: inside;
+        }
+
+        .l3 {
+            list-style-type: square;
+        }
+
+        .l4 {
+            list-style: circle inside none;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="l1">
+        <li>Lorem.</li>
+        <li>Lorem, ipsum.</li>
+        <li>Lorem, ipsum dolor.</li>
+    </ul>
+    <ul class="l2">
+        <li>Lorem.</li>
+        <li>Lorem, ipsum.</li>
+        <li>Lorem, ipsum dolor.</li>
+    </ul>
+    <ul class="l3">
+        <li>Lorem.</li>
+        <li>Lorem, ipsum.</li>
+        <li>Lorem, ipsum dolor.</li>
+    </ul>
+    <ul class="l4">
+        <li>Lorem.</li>
+        <li>Lorem, ipsum.</li>
+        <li>Lorem, ipsum dolor.</li>
+    </ul>
+</body>
+
+</html>
