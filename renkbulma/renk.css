@@ -1,0 +1,33 @@
+*{ margin:0px ;padding:0px}
+body{
+    font-family: "Open Sans",sans-serif;
+}
+#game{
+    width: 408px;
+    margin: auto;
+    margin-top: 50px;
+}
+#game div{
+    width: 200px;
+    height: 200px;
+    float: left;
+    border: 2px solid #fff;
+    
+}
+.kirmizi{
+    background: #E26464;
+    
+}
+.mavi{
+    background: #66ade3;
+}
+.sari{
+    background: #e2de64;
+
+}
+.yesil{background: #86e264;
+}
+#puan{font-size:20px;
+padding-left: 180px;
+padding-top: 20px;
+}
